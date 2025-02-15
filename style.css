@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    height: 100vh;
+    overflow: hidden;  /* Prevents unwanted scrolling */
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+/* nav bar styling  */
+.nav-bar {
+    position: fixed;
+    display: flex;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    z-index: 100;
+}
+.nav-bar img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.home-search {
+    display: flex;
+    width: 590px;
+    justify-content: space-between;
+    margin-right: 60px;
+}
+.home-search i {
+    font-size: 20px;
+    background-color: #121212;
+    border-radius: 50%;
+    padding: 10px 10px;
+    color: #ffffff;
+    opacity: 0.6;
+}
+.home-search .search {
+    align-items: center;
+    display: flex;
+    width: 91%;
+    background-color: #121212;
+    border-radius: 1.6rem;
+    gap: 10px;
+}
+.search input {
+    width: 86%;
+    height: 1.7rem;
+    background-color: #121212;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff9f9;
+}
+.home-search .search:hover{
+    background-color:#232323;
+    .input{
+        
+        background-color:#232323;
+    }
+    i{
+        opacity: 1;
+        background-color: #232323;
+    }
+
+}
+    .btn-icon i:hover,
+.home-search i:hover {
+    color: white;
+    opacity: 1;
+}
+
+
+.btn-icon {
+    display: flex;
+    width: 380px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    margin-right: 20px;
+}
+
+.btn-icon button {
+    height: 2rem;
+    width: auto;
+    border-radius: 1.6rem;
+    padding: 5px 15px;
+    font-weight: 600;
+}
+     .btn-icon button:hover {
+    transform: scale(1.1); 
+    
+}
+.btn-icon .install:hover {
+    color: rgb(255, 255, 255);
+}
+
+.btn-icon .ntf {
+    font-size: 20px;
+    color: #8b8b8bd5;
+    margin-right: 15px;
+}
+.btn-icon .user {
+    font-size: 20px;
+    background-color: #121212;
+    border-radius: 50%;
+    padding: 10px 10px;
+}
+.btn-icon .install {
+    background-color: #12121200;
+    color: rgba(255, 255, 255, 0.518);
+    border: none;
+}
+.right-part {
+    display: flex;
+}
+     /*nav bar complete*/
+
+
+.container {
+    display: flex;
+    flex: 1;
+    margin-top: 60px;
+    /* Pushes content below nav bar */
+    margin-bottom: 85px;
+    /* Prevents overlap with music player */
+    overflow: hidden;
+}
+
+
+/* side-bar styling start */
+.side-bar {
+    /* display: flex;
+    flex-wrap: wrap; */
+    background-color: #121212;
+    width: 420px;
+    border-radius: 0.6rem;
+    margin-right: 0.5rem;
+}
+.lib-panel{
+    display: flex;
+    width: 100%;
+    height: 75px;
+    justify-content: space-between;
+    padding:  25px 18px;
+}
+.lib{
+    display: flex;
+    font-size: 12px;
+    color: #ffffff;
+    gap: 10px;
+    padding: 4px 8px;
+    justify-content: center; 
+    opacity: 0.6;
+    transition: ease-out 0.3s;
+}
+.lib:hover{ 
+    opacity:1;
+}
+.right-lib i:hover{
+    opacity: 1;
+}
+
+.side-bar img{
+    height: 1.4rem;
+    width: 1.4rem; 
+    
+}
+.right-lib{
+    display: flex;
+    font-size: 18px;
+    gap: 1rem;
+    padding: 4px 8px;
+    justify-content: center;
+    transition: ease-out 0.3s;
+}
+.right-lib i{
+    color: #ffffff;
+    opacity: 0.6;
+}
+.lib-box{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    height: inherit;
+    padding: 0.5rem 0.5rem;
+    justify-content: center;
+}
+.lib-box .box{
+    width: 98%;
+    background-color: #232323;
+    height: fit-content;
+    line-height: 1.8rem;
+    padding: 16px 20px;
+    border-radius: 0.5rem;
+    margin-bottom: 20px;
+}
+.box p1{
+    font-size: 16px;
+    font-weight: 700;
+}
+.box p2{
+    font-size: 14px;
+    font-weight: 500;
+}
+.box button{
+    margin-top: 1.5rem;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    font-weight: 750;
+    padding: 7px 10px;
+    border-radius: 1rem;
+    border: none;
+}
+/* side-bar styling end  */
+
+
+.main-container {
+    overflow: auto;
+    background-color: #121212;
+    flex: 1;
+    border-radius: 0.6rem;
+    padding: 1rem;
+
+}
+.main-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Scrollbar track (transparent background) */
+.main-container::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+    /* Fully transparent */
+}
+
+/* Scrollbar thumb (white color) */
+.main-container::-webkit-scrollbar-thumb {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(98, 97, 97, 0.351);
+    /* Solid white */
+    border-radius: 3px;
+}
+.card-container{
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.card{
+    width: 175px;
+    height: 250px;
+    background-color: #121212;
+    border-radius: 0.5rem;
+    padding: 8px 8px;
+    transition: all ease-out 0.3s;
+}
+.card:hover{
+    background-color: #232323;
+}
+.card img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.card .card-name{
+    padding-left: 5px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.card .discription{
+    padding-left: 5px;
+    font-size: 14px;
+    font-weight: 200;
+    opacity: 0.8;
+}
+
+
+.music-player {
+    display: flex;
+    position: fixed;
+    background-color: #000000;
+    bottom: 0;
+    width: 100%;
+    height: 74px;
+}
+.album{
+    width: 25%;
+}
+.player{
+    width: 50%;
+   
+}
+.player-control{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.player-control-icon{
+    height: 1rem;
+    margin-right: 2rem;
+    opacity: 0.7;
+}
+.player-control-icon:hover{
+    opacity: 1;
+}
+.player-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+    gap: 5px;
+
+}
+.progressbar{
+    width: 70%;
+}
+
+.control{
+    width: 25%;
+}

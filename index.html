@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./asset/logo.png">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <div class="nav-bar">
+            <img src="./asset/spotify-bw logo.png" alt="logo">
+            <div class="right-part">
+                <div class="home-search">
+                    <i class="fa-solid fa-house" style="opacity: 1;"></i>
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" class="input" placeholder="What do you want to play?">
+                    </div>
+                </div>
+                <div class="btn-icon">
+                    <button class="explore">Explore Premium</button>
+                    <button class="install"><i class="fa-solid fa-download"></i> Install app</button>
+                    <i class="fa-regular fa-bell ntf"></i>
+                    <i class="fa-solid fa-user user"></i>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="side-bar">
+                <div class="lib-panel">
+                    <div class="lib">
+                        <img src="./asset/library_icon.png" class="lib-icon">
+                        <h2>Your Library</h2>
+                    </div>
+                    <div class="right-lib">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box">
+                        <p1>Create your first playlist</p1><br>
+                        <p2>it's easy, we'll help you</p2><br>
+                        <button class="badge"> Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <p1>Let's find some podcast to follow</p1><br>
+                        <p2>We'll keep you update on new episodes</p2><br>
+                        <button class="badge">Browse podcast</button>
+                    </div>
+                </div>
+            </div>
+            <div class="main-container">
+
+                <h2 class="title">Recently Played</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./asset/card1img.jpeg" alt="">
+                        <div class="card-name">Top 50 global</div>
+                        <div class="discription">world wide famous song top 50</div>
+                    </div>
+                   
+                </div>
+                <h2 class="title">Trending</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./asset/card2img.jpeg" alt="">
+                        <div class="card-name">Card name</div>
+                        <div class="discription">dicription</div>
+                    </div>
+                    <div class="card">
+                        <img src="./asset/card3img.jpeg" alt="">
+                        <div class="card-name">Card name</div>
+                        <div class="discription">dicription</div>
+                    </div>
+                    <div class="card">
+                        <img src="./asset/card4img.jpeg" alt="">
+                        <div class="card-name">Card name</div>
+                        <div class="discription">dicription</div>
+                    </div>
+                    <div class="card">
+                        <img src="./asset/card5img.jpeg" alt="">
+                        <div class="card-name">Card name</div>
+                        <div class="discription">dicription</div>
+                    </div>
+                </div>
+                <h2 class="title">Top rated</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./asset/card1img.jpeg" alt="">
+                        <div class="card-name">Card name</div>
+                        <div class="discription">dicription</div>
+                    </div>
+                    <div class="card">
+                        <img src="./asset/card5img.jpeg" alt="">
+                        <div class="card-name">Card name</div>
+                        <div class="discription">dicription</div>
+                    </div>
+                    <div class="card">
+                        <img src="./asset/card6img.jpeg" alt="">
+                        <div class="card-name">Card name</div>
+                        <div class="discription">dicription</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="music-player">
+            <div class="album"></div>
+            <div class="player">
+                <div class="player-control">
+                    <img src="./asset/player_icon1.png" alt=""class="player-control-icon">
+                    <img src="./asset/player_icon2.png" alt=""class="player-control-icon">
+                    <img src="./asset/player_icon3.png" alt=""class="player-control-icon" style="opacity: 1; height:25px;">
+                    <img src="./asset/player_icon4.png" alt=""class="player-control-icon">
+                    <img src="./asset/player_icon5.png" alt=""class="player-control-icon">
+
+                </div>
+                <div class="player-bar">
+                    <span class="start">0.00</span>
+                    <input type="range" min="0" max="100" class="progressbar" step="1">
+                    <span class="end">5.14</span>
+                </div>
+            </div>
+            <div class="control"></div>
+        </div>
+    </div>
+</body>
+
+</html>
